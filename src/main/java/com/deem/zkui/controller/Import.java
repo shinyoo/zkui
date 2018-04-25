@@ -95,7 +95,7 @@ public class Import extends HttpServlet {
 
                 } else {
                     uploadFileName = item.getName();
-                    sbFile.append(item.getString());
+                    sbFile.append(item.getString("UTF-8"));
                 }
             }
 
